@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+   
+}
+.box1-parent{
+    /*display:flex;
+    align-items: center;
+    justify-content: center;*/
+    width:98.5%;
+    min-height: 96.8vh;
+    /*background:linear-gradient(135deg, #153677, #4e085f );;*/
+    background: linear-gradient(135deg, #87CEEB, #E3D9F3);
+    padding: 10px;
+
+}
+.box1{
+    
+    width:100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin:100px auto 20px;
+    padding:40px 30px 70px ;
+    border-radius: 10px;  
+    /*overflow: auto; */
+    margin-top: -1rem;
+    margin-top: 5rem;
+
+
+    overflow: auto;
+    
+   
+
+    
+    
+}
+.todo-img{
+    display:flex;
+    align-items: center;
+    margin-left: 2rem;
+    /* color: #01194b;*/
+    color: #002675;
+    font-size: 1.7rem;
+    font-weight: 1000;
+    margin-top: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.todo-img img{
+height:1.9rem;
+margin-left: 0.4rem;
+}
+.searchbox-parent{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#efefef;
+    margin-right: 1rem;
+    border-radius:40px 40px 40px 40px;
+
+
+
+    display: flex;               /* Use flexbox for alignment */
+    justify-content: center;     /* Center content horizontally */
+    align-items: center;         /* Center content vertically */
+     
+}
+.search-box{
+    width:78%;
+    /*height:2rem;*/
+    height:1em;
+    border:none;
+    outline:none;
+    background-color:#efefef ;
+    border-radius:40px 40px 40px 40px;
+    text-align: center;
+   /* font-size: 1.2rem; */         /* Font size for input text */
+    text-align: center;
+   
+    
+}
+
+input::placeholder{
+   text-align: center;         /* Center the placeholder text */
+    color: gray; 
+}
+.searchbox-parent button{
+    border-radius:40px 40px 40px 40px;
+    border:none;
+    height:3rem;
+   background-color: orangered;
+   width:20%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.1rem;
+    color:white;
+    font-size:1rem;
+margin-left: -1rem;
+cursor:pointer;
+outline:none;
+margin-left: 1rem;
+
+}
+
+input[type="text"]{
+    border:none;
+}
+.text-area{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    gap:1rem;
+    position: relative;
+}
+.text-area p{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+   color:rgb(3, 3, 3);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor:pointer;
+    
+    
+}
+.text-area p::before{
+    content:'';
+    background-image: url('images/unchecked.png');
+    background-size: cover;
+    display:inline-block;
+    background-position: center;
+    /*height:22px;
+    width:22px;*/
+    height:1.3rem;
+    width:1.3rem;
+    margin-right: 0.8rem;
+
+}
+.text-area p.checked{
+    color:rgb(8, 8, 8);
+    text-decoration: line-through;
+}
+.text-area p.checked::before{
+    content:'';
+    background-image: url('images/checked.png');
+    background-size: cover;
+    display:inline-block;
+    background-position: center;
+    height:20px;
+    width:20px;
+    margin-right: 0.5rem;
+}
+.text-area p span{
+    position:absolute;
+    /*margin-left: 80%;*/
+    font-weight: 600;
+    margin-top: 0.2rem;
+    cursor:pointer;
+    height:20px;
+    width:20px;
+    text-align: center;
+  right:0;
+
+}
+.text-area p span:hover{
+background-color:#edeef0;
+
+}
