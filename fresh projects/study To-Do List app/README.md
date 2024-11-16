@@ -1,1 +1,1 @@
-https://osmantasktidy.netlify.app/ - website link
+website link: https://osmantasktidy.netlify.app/ 
